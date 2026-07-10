@@ -82,6 +82,60 @@ p{
     transform:scale(1.05);
 
 }
+    /* Polaroid Photo */
+
+.polaroid{
+
+    width:280px;
+
+    max-width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:15px 15px 55px;
+
+    border-radius:4px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.5);
+
+    transform:rotate(-3deg);
+
+    transition:.4s;
+
+}
+
+.polaroid:hover{
+
+    transform:rotate(0deg) scale(1.04);
+
+}
+
+.polaroid img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:2px;
+
+}
+
+.polaroid-text{
+
+    color:#555;
+
+    text-align:center;
+
+    margin-top:18px;
+
+    font-size:1.3rem;
+
+    font-family:"Brush Script MT", cursive;
+
+}
 .caption{
     margin-top:12px;
     font-style:italic;
@@ -168,9 +222,14 @@ wherever I am, my heart is always with you.
 <p>
 I love you more than words can ever express.
 </p>
-<div class="photo">
+<div class="polaroid">
+
     <img src="IMG_4869.jpeg" alt="Us Together">
-    <p class="caption">US and Flynn ❤️</p>
+
+    <div class="polaroid-text">
+        US and Flynn ❤️
+    </div>
+
 </div>
 <div class="signature">
 Forever & Always,<br>
