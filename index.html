@@ -149,7 +149,27 @@ p{
     animation:floatUp linear infinite;
     opacity:.5;
 }
+#musicBtn{
 
+    background:#ff6fa8;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(255,105,180,.4);
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.05);
+
+    background:#ff4f93;
+
+}
 @keyframes floatUp{
     from{
         transform:translateY(110vh);
@@ -160,13 +180,43 @@ p{
 }
 </style>
 </head>
+<audio id="loveSong" loop>
+    <source src="Music.mp3" type="audio/mpeg">
+</audio>
+<script>
 
+const song = document.getElementById("loveSong");
+const btn = document.getElementById("musicBtn");
+
+function toggleMusic(){
+
+    if(song.paused){
+
+        song.play();
+
+        btn.innerHTML = "⏸ Pause Our Song";
+
+    }else{
+
+        song.pause();
+
+        btn.innerHTML = "🎵 Play Our Song";
+
+    }
+
+}
+
+</script>    
 <body>
 
 <div class="card">
 
 <h1>💌 To My Beautiful Wife ❤️</h1>
-
+<div style="text-align:center; margin-bottom:25px;">
+    <button id="musicBtn" onclick="toggleMusic()">
+        🎵 Play This Song :)
+    </button>
+</div>
 <p>
 If you're reading this, then you will have a wonderful day today.
 I know it's not much, but I wanted to make something that could
