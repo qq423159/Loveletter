@@ -1,1 +1,167 @@
-<html><head><title>My Letter</title></head><body style='font-family:Georgia;background:#2d0b45;color:white;padding:40px;max-width:700px;margin:auto;'><h1>💌 For My Beautiful Wife ❤️</h1><p>Happy 4th of July, my love.</p><p>I know we can't watch the fireworks together this year, and I wish we could be standing side by side under the night sky.</p><p>Since we can't, I wanted to make you something special. Every firework, every heart, and every little cat and dog was made with you in mind.</p><p>Thank you for being my best friend and my biggest supporter. I miss you, I love you, and I can't wait until we're together again.</p><p>Forever & Always,<br><b>❤️ B ❤️</b></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Letter ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(180deg,#12001f,#2d0b45,#0b0b2f);
+    font-family:Georgia, serif;
+    color:white;
+    overflow:hidden;
+}
+
+.card{
+    width:min(90%,750px);
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 0 30px rgba(255,255,255,.15);
+    z-index:10;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2.2rem;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.signature{
+    margin-top:30px;
+    text-align:right;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.heart{
+    position:fixed;
+    color:#ff9dcf;
+    pointer-events:none;
+    animation:floatUp linear infinite;
+    opacity:.5;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(110vh);
+    }
+    to{
+        transform:translateY(-10vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💌 To My Beautiful Wife ❤️</h1>
+
+<p>
+If you're reading this, then you found my little surprise.
+I know it's not much, but I wanted to make something that could
+bring a smile to your face and remind you of how much you mean to me.
+</p>
+
+<p>
+Sometimes I don't always find the perfect words to say, but one thing
+I'll never have trouble saying is that I love you.
+</p>
+
+<p>
+Thank you for loving me through the good days and the hard ones.
+Thank you for believing in me, encouraging me, and standing beside me
+as we build our life together. You make even the ordinary days feel
+special simply by being a part of them.
+</p>
+
+<p>
+I miss you whenever we're apart, but knowing that you're my wife
+makes every goodbye a little easier because I know we'll always
+find our way back to each other.
+</p>
+
+<p>
+I hope you never forget how incredible you are.
+Your kindness, your smile, your strength, and your heart are just
+a few of the countless reasons I fell in love with you.
+Every day I thank God for bringing you into my life.
+</p>
+
+<p>
+No matter where life takes us or what challenges we face,
+I promise to keep choosing you, supporting you, laughing with you,
+and loving you with all my heart.
+You're not only the love of my life—you are my best friend,
+my greatest blessing, and the person I want beside me for every
+adventure still to come.
+</p>
+
+<p>
+I can't wait for all the memories we haven't made yet:
+the trips we'll take, the dreams we'll accomplish,
+the quiet evenings together, and all the little moments
+that will one day become our favorite memories.
+</p>
+
+<p>
+Until I can hold you again, I hope this reminds you that
+wherever I am, my heart is always with you.
+</p>
+
+<p>
+I love you more than words can ever express.
+</p>
+
+<div class="signature">
+Forever & Always,<br>
+❤️ B ❤️
+</div>
+
+</div>
+
+<script>
+for(let i=0;i<35;i++){
+
+    const heart=document.createElement("div");
+
+    heart.className="heart";
+
+    heart.textContent=Math.random()>.5?"❤️":"💖";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.fontSize=(18+Math.random()*28)+"px";
+
+    heart.style.animationDuration=(8+Math.random()*8)+"s";
+
+    heart.style.animationDelay=(-Math.random()*15)+"s";
+
+    document.body.appendChild(heart);
+
+}
+</script>
+
+</body>
+</html>
